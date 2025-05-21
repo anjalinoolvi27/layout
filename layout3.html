@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Academy Registration Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            width: 100%;
+            height: 150px;
+            background-color: #1C3934;
+            padding: 27px;
+            color: #f4f4f4;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        header a{
+            color: #f4f4f4;
+            text-decoration: none;
+        }
+
+        .container{
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        footer{
+            background-color: #1C3934;
+            color: #F4F8F9;
+            text-align: center;
+            margin-bottom: 10px;
+            height: 60px;
+            padding: 20px;
+        }
+
+        h2{
+            color: #1C3934;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        input,select,textarea{
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #f0dea1;
+        }
+        label{
+            margin: 10px 0 5px;
+        }
+        button{
+            margin-top: 20px;
+            background-color: #ccd9d7;
+            color: hsla(117, 77%, 22%, 0.927);
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #9188b7;
+        }
+        option{
+            color: #81bd34;
+        }
+    </style>
+</head>
+<body style="background-color: #e4ebec;">
+    <header>
+        <h1><b>Dance Dynamic Karnataka</b></h1> 
+        <br>
+        <p><i>-: Unlock Your Inner Dancer :-</i></p>
+        <br> 
+        
+        <p style="word-spacing: 20px;">
+        <a href="#">HOME</a>
+        |
+        <a href="#">ABOUT</a>
+        |
+        <a href="#">CONTACT</a>
+        </p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Dance Forms</h2>
+            <img src="dance.jpeg" width="120" height="150">
+            <br>
+            <ul>
+                <li>Bharatanatyam</li>
+                <li>Kathak</li>
+                <li>Kuchipudi</li>
+                <li>pop</li>
+                <li>Yakshagana</li>
+            </ul>
+        </section>
+        <br>
+
+        <section>
+            <h2>Dance academy </h2>
+            <br>
+            <form action="#" method="post">
+
+                <label for="fname">Full Name :</label>
+                <input type="text" id="fname" name="Full Name" placeholder="Enter your name">
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="Email" placeholder="example@gmail.com">
+
+                <label for="phone">Phone Number :</label>
+                <input type="tel" id="phone" name="Phone Number" placeholder="Enter your number" pattern="[0-9]{10}">
+
+                <label for="position">Applying For</label>
+                <select name="position" id="position">
+                    <option value="">--Select Forms--</option>
+                    <option value="Bharatanatyam">Bharatanatyam</option>
+                    <option value="Kathak">Kathak</option>
+                    <option value="Kuchipudi">Kuchipudi</option>
+                    <option value="pop">pop</option>
+                    <option value="Yakshagana">Yakshagana</option>
+                </select>
+
+                <br>
+                <div>
+
+                <label for="choose">choose city: </label>
+
+                <input type="radio" id="Hubli" name="citys" value="Hubli">
+                <label for="Hubli">Hubli</label>
+
+                <input type="radio" id="Bengaluru" name="citys" value="Bengaluru">
+                <label for="Bengaluru">Bengaluru</label>
+                
+                <input type="radio" id="Gadag" name="citys" value="Gadag">
+                <label for="Gadag">Gadag</label>
+
+                <input type="radio" id="Dharwad" name="citys" value="Dharwad">
+                <label for="Dharwad">Dharwad</label>
+
+                <input type="radio" id="Bijapur" name="citys" value="Bijapur">
+                <label for="Bijapur">Bijapur</label>
+
+
+                </div>
+                
+                <label for="Gender"> Choose Gender :</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+
+                <label for="option"> Have you participated in dance competition in the past :</label>
+                <label><input type="radio" name="Yes" value="option1"> Yes</label>
+                <label><input type="radio" name="No" value="option2"> No</label>
+
+                <label for="certificate">Upload any certificate :</label>
+                <input type="file" id="certificate" accept=".pdf, .doc, .docx">
+
+                <label for="expireance">ABOUT  DANCE :</label>
+                <textarea name="cover" id="cover" rows="4" placeholder="write your dance expireance"></textarea>
+
+                <label>
+                    <input type="checkbox" name="terms">
+                    I agree to the terms and conditions
+                </label>
+
+                <button type="submit" > Submit Application</button>
+            </form>
+
+        </section>
+
+    </div>
+    <footer> <h2>&copy; Dance class Application</h2></footer>
+</body>
+</html>
